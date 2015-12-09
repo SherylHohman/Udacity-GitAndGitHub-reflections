@@ -1,4 +1,6 @@
-
+3) "Reflect: Commit Size"
+How can you use the staging area to make sure you have one commit per logical change?
+	Leave files that are not part of that logical change "unstaged" while you stage and commit files that Are part of that logical change.
 
 2a) How is the staging area different from the working directory and the repository? 
 	Staging area lists files from the working directory that will be added to the repository 
