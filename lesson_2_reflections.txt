@@ -2,13 +2,14 @@
 
 2a) How is the staging area different from the working directory and the repository? 
 	Staging area lists files from the working directory that will be added to the repository 
-	once the git commit command is run
+	once the git commit command is run, these files will become part of the reepository.
 
 2b) What value do you think it offers?
 	Allows one to control when specific files are to be added to the repository,
 	and allows one to attach a custom (commit) message to said files.
-	This allows one to work on files, without committing them until they are read.
-	It also allows one to logically group related files or related changes into separate commits.
+	It also allows one to group related files or related changes into separate logical commits.
+	It also allows one to work on files, even different topics, without commiting them until they
+	 (or their related edits/files) are ready.
 
 1a) What happens when you initialize a repository?
 	.git directory is created, containing files git needs to keep track of git commits, etc. 
