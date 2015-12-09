@@ -1,3 +1,11 @@
+4) "Reflect: When to Use Branches"
+What are some situations when branches would be helpful in keeping your history organized? 
+	Testing out new features.  Working on a bug. 
+	Working on unrelated projects or features where so it will be easy to commit files separately
+How would branches help?
+	Keeps the code segregated from the main repository, until it has been tested, bug free, and 
+	approved to be included in the main repo, master branch, official version.
+
 3) "Reflect: Commit Size"
 How can you use the staging area to make sure you have one commit per logical change?
 	Leave files that are not part of that logical change "unstaged" while you stage and commit files that Are part of that logical change.
