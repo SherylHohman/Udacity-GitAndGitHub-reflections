@@ -1,3 +1,8 @@
+7)"Reflect: Automatic vs. Manual Merging"
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	Saves time, effort, and saves  on typos. 
+	Con: seems like a chore we actually need to do so manually (ie git auto won't work)
+
 6) "Reflect: Merging Two Branches"
 What is the result of merging two branches together? 
 	The commits for both branches are interleved.
