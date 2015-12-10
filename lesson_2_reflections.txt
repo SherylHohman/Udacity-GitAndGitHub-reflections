@@ -1,3 +1,9 @@
+5) "Reflect: Visualizing with Diagrams1"
+How do the diagrams help you visualize the branch structure?
+	It makes it easy to see common history between branches:
+	where they diverge, and where they are merged together again.
+	It also makes it easy to see detached commits that will be lost.
+
 4) "Reflect: When to Use Branches"
 What are some situations when branches would be helpful in keeping your history organized? 
 	Testing out new features.  Working on a bug. 
