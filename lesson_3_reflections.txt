@@ -9,11 +9,14 @@ local?
     If I want to use other github features.
     Backup -though not a proper backup system, ...
 
-2)
+2) "Manual vs. Automatic Pull"
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    There could be possible merge issues. 
+    When I'm working on some files, I need to know they are in the state I expect them to be in.
+    Files and code could become non-senseicle. I want to remain control.
+    Perhaps I do not approve.
 
 3)
 Describe the differences between forks, clones, and branches.  
