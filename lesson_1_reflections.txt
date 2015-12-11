@@ -1,86 +1,78 @@
+7)
 How did viewing a diff between two versions of a file help you see the bug that
 was introduced?
-----
 
-    By removing lines that had not changed, it narrowed our scope of reference.  
-However, using FC on windows, it was difficult to see subtle differences, such as a typo in the lines remaining.
-The font, window size, and stark color contrast bewteen the text and background all made seeing subtle differences, such as a single changed letter, difficult to find.
+        By removing lines that had not changed, it narrowed our scope of reference.
+        However, using FC on windows, it was difficult to see subtle differences, such as a typo in the lines remaining.
+        The font, window size, and stark color contrast bewteen the text and background all made seeing subtle differences, such as a single changed letter, difficult to find.
 
-I was unaware of the windows built in File Compare utility, FC. 
-I have used file compare software, such as Diffmerge and kdiff3 - which have been invaluable at times.
+        I was unaware of the windows built in File Compare utility, FC.
+        I have used file compare software, such as Diffmerge and kdiff3 - which have been invaluable at times.
 
-I wish I had known about FC when I needed a file compare utility, and had none installed.
--------------------------------------------------------------------------
+        I wish I had known about FC when I needed a file compare utility, and had none installed.
 
+ 6)
  How could having easy access to the entire history of a file make you a more
 efficient programmer in the long term?
-----
 
-    For one, I do not need to keep so many files around, with long file names summarizing the changes to said file from the pervious version.
-For another, looking something up is now a breeze.. search commit log for the item I want to re-visit: bingo. Memory refreshed.
-And Importantly, if a bug is introduced, I can easily revert to previous version, or see what changes were made between the last known bug-free version and the first known buggy version.
-Finally, this makes experimentation, and development of separate pieces of code, well separate. One file does not need to have various stages of separate items. 
-And code can be cleaner, as documentation of Changes actually, or largely take place in the commit message, I may not need so many lines of code documenting to myself the exact difference in code between various saved versions of the file. Perhaps I was odd in this respect, but I (overboard?) would place a comment with date the line of code was changed, what it was changed to, and what it was changed from.  Now this can largely be removed, leaving commit messages to document the process and the change history.
--------------------------------------------------------------------------
+        - For one, I do not need to keep so many files around, with long file names summarizing the changes to said file from the pervious version.
+        - For another, looking something up is now a breeze.. search commit log for the item I want to re-visit: bingo. Memory refreshed.
+        - And Importantly, if a bug is introduced, I can easily revert to previous version, or see what changes were made between the last known bug-free version and the first known buggy version.
+       -  Finally, this makes experimentation, and development of separate pieces of code, well separate. One file does not need to have various stages of separate items.
+        - And code can be cleaner, as documentation of Changes actually, or largely take place in the commit message, I may not need so many lines of code documenting to myself the exact difference in code between various saved versions of the file. Perhaps I was odd in this respect, but I (overboard?) would place a comment with date the line of code was changed, what it was changed to, and what it was changed from.  Now this can largely be removed, leaving commit messages to document the process and the change history.
 
+5)
 What do you think are the pros and cons of manually choosing when to create a
 commit, like you do in Git, vs having versions automatically saved, like Google
 docs does?
-----
 
-    Well, saving a document with code in it could be terribly inconvenient if it saved the file with incomplete lines of code written.
-    By choosing when to commit, manually, you can ensure that the code is correct, and functional (save unintentional bugs..)
-    You also are probably saving at intervals that reflect stages of code development. The opposite could have many saves that are minor increments, or you could have too few saves, where many unrelated, or large, changes exist between subsequent saves.
-    Granular saving that reflects a unit of work accomplished, and saves that are not "mid-sentenct", so to speak where a unit of code is complete such that it compiles or runs is quite more important and has more implications than it does for text files, say, that do not need to "run".
--------------------------------------------------------------------------
+        Well, saving a document with code in it could be terribly inconvenient if it saved the file with incomplete lines of code written.
+        By choosing when to commit, manually, you can ensure that the code is correct, and functional (save unintentional bugs..)
+        You also are probably saving at intervals that reflect stages of code development. The opposite could have many saves that are minor increments, or you could have too few saves, where many unrelated, or large, changes exist between subsequent saves.
+        Granular saving that reflects a unit of work accomplished, and saves that are not "mid-sentenct", so to speak where a unit of code is complete such that it compiles or runs is quite more important and has more implications than it does for text files, say, that do not need to "run".
 
+4)
 Why do you think some version control systems, like Git, allow saving multiple
 files in one commit, while others, like Google Docs, treat each file separately?
-----
 
-   programs are interactive, and may have files that are dependant on each other.
-   So, it is possible, that changes in one file will not work properly,
-   unless changes are also made in a related file.
-   Saving files together that represent related work makes sense.
-   On the otherhand, text and other Google Docs documents are largely independant of each other, so it makes sense to track changes on a per file basis.
--------------------------------------------------------------------------
+       programs are interactive, and may have files that are dependant on each other.
+       So, it is possible, that changes in one file will not work properly,
+       unless changes are also made in a related file.
+       Saving files together that represent related work makes sense.
+       On the otherhand, text and other Google Docs documents are largely independant of each other, so it makes sense to track changes on a per file basis.
 
+3)
 How can you use the commands git log and git diff to view the history of files?
-----
 
     git log will list the all the commits. Each will be listed as (fileN-commit#) followed by a brief description of the changes represented by that commit.
-    
+
     To compare the history of changes between any two commits (including the first and last), use
     git diff file1-commit# file2-commit#
 
-    So the two commands are used in tandem. 
+    So the two commands are used in tandem.
     The first to find the commit#'s' for the two versions which you want to compare, or to see the history ie list of differences between.
     The second, then shows the history, or differences, or changes made in all files between those two commits.
--------------------------------------------------------------------------
 
+2)
 How might using version control make you more confident to make changes that
 could break something?
-----
 
-    It's very easy to backout if something does break.
-    It's also very easy to retrace your steps if something that was doing fine suddenly misbehaves. 
-    Very easy to see what lines of code has been changed. Easy to re-trace your steps.
-    Mainly, though, you have a huge safety net, and can easily revert if your idea does not work out. 
-    This gives one great freedom in trying new ideas, and experimenting.
-    It may work out Fantastically - Hooray - you just did something new and great.
-    If id does not work, no prob. You don't have anything to "fix" in the process of backing out.
-    It's like a one-step revert. Only time lost is the time it took to figure out that that line of thought was not going to work out best. And even then, you probably learned something, or figured out something that is still a benefit to your eventual solution.
--------------------------------------------------------------------------
+        It's very easy to backout if something does break.
+        It's also very easy to retrace your steps if something that was doing fine suddenly misbehaves.
+        Very easy to see what lines of code has been changed. Easy to re-trace your steps.
+        Mainly, though, you have a huge safety net, and can easily revert if your idea does not work out.
+        This gives one great freedom in trying new ideas, and experimenting.
+        It may work out Fantastically - Hooray - you just did something new and great.
+        If id does not work, no prob. You don't have anything to "fix" in the process of backing out.
+        It's like a one-step revert. Only time lost is the time it took to figure out that that line of thought was not going to work out best. And even then, you probably learned something, or figured out something that is still a benefit to your eventual solution.
 
+1)
 Now that you have your workspace set up, what do you want to try using Git for?
-----
-
-    Homework Assignments
-    Submitting corrections to found typos or unclear explanations
-    My Website - Use this to document code changes !!
-    	Boy - that is going to save me some disk space :-) 
-    	Wish there was something like this for image editing..
-    Plugins that I have customized: make the customizations available to the authors of the product. Make the customizations available to other users of the product.
-    Gosh, could even use this for writing "How To" articles, 
-    	or any text that will take revisions and pondering.
--------------------------------------------------------------------------
+        Homework Assignments
+        Submitting corrections to found typos or unclear explanations
+        My Website - Use this to document code changes !!
+        	Boy - that is going to save me some disk space :-)
+        	Wish there was something like this for image editing..
+        Plugins that I have customized: make the customizations available to the authors of the product. Make the customizations available to other users of the product.
+        Gosh, could even use this for writing "How To" articles,
+        	or any text that will take revisions and pondering.
