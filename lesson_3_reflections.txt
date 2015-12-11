@@ -1,8 +1,13 @@
-1)
+1) "Section: When to Use a Remote repository"
 When would you want to use a remote repository rather than keeping all your work
 local?
 
-    Fill in your answer here
+    If I want to share the repository with others. 
+    If I'm collaborating with others on this repository.
+    If this is a fork of another's repository.
+    If I want to access it remotely (ie another machine, show others, backup, copy to another computer..)
+    If I want to use other github features.
+    Backup -though not a proper backup system, ...
 
 2)
 Why might you want to always pull changes manually rather than having Git
