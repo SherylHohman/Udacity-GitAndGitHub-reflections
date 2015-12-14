@@ -2,46 +2,68 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
 
-    If I want to share the repository with others. 
-    If I'm collaborating with others on this repository.
-    If this is a fork of another's repository.
-    If I want to access it remotely (ie another machine, show others, backup, copy to another computer..)
-    If I want to use other github features.
-    Backup -though not a proper backup system, ...
+    - If I want to share the repository with others. 
+    - If I'm collaborating with others on this repository.
+    - If this is a fork of another's repository.
+    - If I want to access it remotely (ie another machine, show others, 
+        backup, copy to another computer..)
+    - If I want to use other github features.
+    - Although not a proper backup system, it can also act as a backup copy..
 
 2) "Manual vs. Automatic Pull"
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    There could be possible merge issues. 
-    When I'm working on some files, I need to know they are in the state I expect them to be in.
-    Files and code could become non-senseicle. I want to remain control.
-    Perhaps I do not approve.
+    - There could be possible merge issues. 
+    - When I'm working on some files, I need to know they are in the state 
+        I expect them to be in.
+    - else Files and code could become non-sense. 
+    - I want to remain control of when merges occur.
 
 3) "Forks, Clones, and Branches"
 Describe the differences between forks, clones, and branches.  
  
-  	-Fork essentially clones somebody else's GitHub repository to one's own repository.
-    - Clone copies a repository (probably GitHub, or git) to a local git repository
-    - Branches can exist on any repository. It shows where code diverges from  a code base. 
+  	- Fork essentially clones somebody else's GitHub repository 
+        to one's own repository.
+    - Clone copies a repository (probably GitHub, or git) 
+        to a local git repository
+    - Branches can exist on any repository. 
+        It shows where code diverges from  a code base. 
 		It is a subset of altered files within a reposittory.
 
 When would you use one instead of another?
 
-	- Branch to alter code, but keep it sandboxed from the master (or other) branch of your repository (local or remote).
-	- Clone to create an exact copy of your local git repository elsewhere on your machine.
+	- Branch to alter code, but keep it sandboxed from the master 
+        (or other) branch of your repository (local or remote).
+	- Clone to create an exact copy of your local git repository 
+        elsewhere on your machine.
 	  or to create an exact copy of your GitHub repository onto your local machine.
-	  or to create an exact copy of someone's else's GitHub repository that you have contributor permissions to alter (merge, etc).
-	- Fork to create a copy of someone else's repository that you do not have collaborator permissions to.  This allows you to modify the code to your heart's content, on your own copy,  but doesn't directly alter the repository that you forked from.  
-    Fork is uniquely a GitHub command.  It is not a part of git, on one's local machine.
+	  or to create an exact copy of someone's else's GitHub repository 
+        that you have contributor permissions to alter (merge, etc).
+	- Fork to create a copy of someone else's repository that you 
+        do not have collaborator permissions to.  
+        This allows you to modify the code to your heart's content, on your own copy,  
+        but doesn't directly alter the repository that you forked from.  
+        Fork is uniquely a GitHub command.  
+        It is not a part of git, on one's local machine.
 
 4) "Local copies of remote branches"
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    One can compare the changes made locally with the changes made remotely.  This becomes particularly useful when it is time to merge a branch that has "confilicting" changes (changes to the same lines of code or text) and you must manually merge the two files.
-    It also allows you to see what changes were accepted on the remote, and decide when/if to incorporate these updates into your own local branches.
-    It is also beneficial when you know that you will not have internet access. Then you can fetch the remote changes without updating your own local branches/master. And peruse/merge the remote changes to your local at leisure, even though you may not have internet access at the time that you want to do so.  You simply reference your own local copy of origin/master.
+    One can compare the changes made locally with the changes made remotely.  
+    This becomes particularly useful when it is time to merge a branch 
+    that has "confilicting" changes (changes to the same lines of code or text) 
+    and you must manually merge the two files.
+    It also allows you to see what changes were accepted on the remote, 
+    and decide when/if to incorporate these updates into your own local branches.
+    It is also beneficial when you know that you will not have internet access. 
+    Then you can fetch the remote changes without updating your own local 
+    branches/master. 
+    You can peruse/merge the remote changes to your local at leisure, 
+    even though you may not have internet access at the time that you want to do so.  
+    You simply reference your own local copy of origin/master 
+    (to see the romote version).
 
 5)
 How would you collaborate without using Git or GitHub?  
