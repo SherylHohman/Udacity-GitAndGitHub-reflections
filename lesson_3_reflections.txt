@@ -21,33 +21,20 @@ automatically stay up-to-date with your remote repository?
 3) "Forks, Clones, and Branches"
 Describe the differences between forks, clones, and branches.  
 Fork essentially clones somebody else's GitHub repository to one's own repository.
-Clone copies a repository (probably GitHub, or git) to a local git repository
-Branches can exist on any repository. It shows where code diverges from  a code base. 
+    - Clone copies a repository (probably GitHub, or git) to a local git repository
+    - Branches can exist on any repository. It shows where code diverges from  a code base. 
 	It is a subset of altered files within a reposittory.
 
 When would you use one instead of another?
-<<<<<<< HEAD
+
 	- Branch to alter code, but keep it sandboxed from the master (or other) branch of your repository (local or remote).
 	- Clone to create an exact copy of your local git repository elsewhere on your machine.
 	  or to create an exact copy of your GitHub repository onto your local machine.
 	  or to create an exact copy of someone's else's GitHub repository that you have contributor permissions to alter (merge, etc).
-	- Fork to create a copy of someone else's repository that you do not have collaborator permissions to.  This allows you to modify the code to your heart's content, on your own copy,  but doesn't directly alter the repository that you forked from.  Fork is uniquely a GitHub command.  It is not a part of git, on one's local machine.
+	- Fork to create a copy of someone else's repository that you do not have collaborator permissions to.  This allows you to modify the code to your heart's content, on your own copy,  but doesn't directly alter the repository that you forked from.  
+    Fork is uniquely a GitHub command.  It is not a part of git, on one's local machine.
 
 4) "Local copies of remote branches"
-||||||| merged common ancestors
-
-    Fill in your answer here
-
-4)
-=======
-	- Branch to alter code, but keep it sandboxed from the master (or other) branch of your repository (local or remote).
-	- Clone to create an exact copy of your local git repository elsewhere on your machine.
-	  or to create an exact copy of your GitHub repository onto your local machine.
-	  or to create an exact copy of someone's else's GitHub repository that you have contributor permissions to alter (merge, etc).
-	- Fork to create a copy of someone else's repository that you do not have collaborator permissions to.  This allows you to modify the code to your heart's content, on your own copy,  but doesn't directly alter the repository that you forked from.  Fork is uniquely a GitHub command.  It is not a part of git, on one's local machine.
-
-4)
->>>>>>> 624414c8db8945955b7fea07eb7ad5f55ac91caa
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
@@ -64,7 +51,7 @@ What would be easier,
 
 and what would be harder?
 
-    Fill in your answer here
+    
 
 6)
 When would you want to make changes in a separate branch rather than directly in
@@ -73,4 +60,4 @@ master?
 
 What benefits does each approach have?
 
-    Fill in your answer here
+    
