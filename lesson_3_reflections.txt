@@ -32,11 +32,13 @@ When would you use one instead of another?
 	  or to create an exact copy of someone's else's GitHub repository that you have contributor permissions to alter (merge, etc).
 	- Fork to create a copy of someone else's repository that you do not have collaborator permissions to.  This allows you to modify the code to your heart's content, on your own copy,  but doesn't directly alter the repository that you forked from.  Fork is uniquely a GitHub command.  It is not a part of git, on one's local machine.
 
-4)
+4) "Local copies of remote branches"
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    One can compare the changes made locally with the changes made remotely.  This becomes particularly useful when it is time to merge a branch that has "confilicting" changes (changes to the same lines of code or text) and you must manually merge the two files.
+    It also allows you to see what changes were accepted on the remote, and decide when/if to incorporate these updates into your own local branches.
+    It is also beneficial when you know that you will not have internet access. Then you can fetch the remote changes without updating your own local branches/master. And peruse/merge the remote changes to your local at leisure, even though you may not have internet access at the time that you want to do so.  You simply reference your own local copy of origin/master.
 
 5)
 How would you collaborate without using Git or GitHub?  
